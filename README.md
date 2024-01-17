@@ -1,7 +1,7 @@
 
-# Talk-A-Tive
+# Talk to someone
 
-Talk-a-tive is a Full Stack Chatting App.
+Talk to someone is a Full Stack Chatting App.
 Uses Socket.io for real time communication and stores user details in encrypted format in Mongo DB Database.
 ## Tech Stack
 
@@ -13,7 +13,7 @@ Uses Socket.io for real time communication and stores user details in encrypted 
   
 ## Demo
 
-https://talk-a-tive.herokuapp.com/
+https://Talk to someone.herokuapp.com/
 
 ![](https://github.com/piyush-eon/mern-chat-app/blob/master/screenshots/group%20%2B%20notif.PNG)
 ## Run Locally
