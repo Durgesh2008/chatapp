@@ -1,27 +1,15 @@
-import React from 'react'
-import { BrowserRouter, Routes, Route } from "react-router-dom"
-import Login from './component/Login'
-import NotFound from './component/NotFound'
-import Register from './component/Register'
-import Chatbox from './component/Chatbox'
-import Setavtar from './component/Setavtar'
+import "./App.css";
+import Homepage from "./Pages/Homepage";
+import { Route } from "react-router-dom";
+import Chatpage from "./Pages/Chatpage";
 
-
-const App = () => {
-  ;
+function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Register />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/chat" element={<Chatbox />} />
-        <Route path="/setavtar" element={<Setavtar />} />
-
-        <Route path='*' element={<NotFound />} />
-      </Routes>
-    </BrowserRouter>
-  )
+    <div className="App">
+      <Route path="/" component={Homepage} exact />
+      <Route path="/chats" component={Chatpage} />
+    </div>
+  );
 }
 
-export default App
-
+export default App;
